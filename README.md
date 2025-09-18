@@ -68,7 +68,7 @@ The following is a **fully annotated, ASCII-based architecture diagram** that sh
                                           │ REST / GraphQL / gRPC
                                           │
                                           ▼
-```
+
 
 ┌───────────────────────────┐     ┌───────────────────────────┐
 │   User Management &       │     │  External Integrations    │
@@ -160,7 +160,7 @@ Again with more detail that includes:
 This is intended to act as a **master reference** for developers, architects, and engineers.
 
 ---
-
+```
 ## Full Event-Driven Architecture & Infrastructure Blueprint (ASCII)
 
 Legend:
@@ -251,6 +251,7 @@ Legend:
 │ APIs: REST/gRPC                                                    │
 │ Events: IntegrationTriggered >>> ML, Billing, Observability        │
 └─────────────────────────────────────────────────────────────────────┘
+```
 
 \--------------------------------- Infrastructure ---------------------------------
 
@@ -329,7 +330,7 @@ This diagram acts as a **single master reference**:
 ---
 
 ## Polyglot Service Guidance
-
+```
 | Subdomain                    | Language/Stack              | Notes                                           |
 | ---------------------------- | --------------------------- | ----------------------------------------------- |
 | ML Pipelines / Experiment    | Python + PyTorch/TensorFlow | Experiment tracking & model registry            |
@@ -338,7 +339,7 @@ This diagram acts as a **single master reference**:
 | Frontend / API Services      | TypeScript / Node + React   | REST/gRPC/GraphQL APIs                          |
 | Data Pipelines / ETL         | Python / Go                 | Batch & streaming pipelines                     |
 | Observability / Monitoring   | TypeScript / Node + Go      | Metrics, logging, tracing collectors            |
-
+```
 ---
 
 ## Infrastructure Overview
@@ -415,7 +416,7 @@ The following is a **fully detailed Nx monorepo folder skeleton** aligned with t
 * **Infra and CI/CD stubs**
 * **Polyglot-ready folders** for Python, Go, Rust, Java, TypeScript
 
-
+```
 hybrid-ai-platform/
 ├── apps/
 │   ├── web-client/                 # Frontend React web app
