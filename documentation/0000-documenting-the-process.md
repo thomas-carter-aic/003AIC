@@ -31,10 +31,10 @@ git commit --allow-empty -m "[INIT] Initialize hybrid AI platform repository"
 
 ```bash
 # Use Nx (or Turborepo) for polyglot monorepo management
-npx create-nx-workspace@latest hybrid-ai-platform --preset=empty
+npx create-nx-workspace@latest hybrid-ai-platform --package-manager=pnpm
 
 # Create core top-level directories
-mkdir -p apps packages services infra docs tests tools
+mkdir -p apps assets configs packages services infra docs tests tools
 
 # Initial commit for structure
 git add .
