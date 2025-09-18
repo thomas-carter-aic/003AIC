@@ -38,7 +38,7 @@ mkdir -p apps assets configs packages services infra docs tests tools
 
 # Initial commit for structure
 git add .
-git commit -m "[INIT] Create monorepo structure: apps, packages, services, infra, docs, tests, tools"
+git commit -m "[INIT] Create monorepo structure: apps, packages, services, infra, docs, tests, tools, etc."
 ```
 
 **Directory Intentions:**
@@ -100,15 +100,15 @@ git commit -m "[DOC][ADR-001] Define core domain and subdomains"
 Create folders for each subdomain under `packages/domain`:
 
 ```bash
-mkdir -p packages/domain/ml-lifecycle/src packages/domain/data-pipelines/src packages/domain/ai-inference/src
-mkdir -p packages/domain/user-mgmt/src packages/domain/billing/src packages/domain/observability/src
-mkdir -p packages/domain/external-integrations/src
+mkdir -p hybrid-ai-platform/packages/domain/ml-lifecycle/src packages/domain/data-pipelines/src packages/domain/ai-inference/src
+mkdir -p hybrid-ai-platform/packages/domain/user-mgmt/src packages/domain/billing/src packages/domain/observability/src
+mkdir -p hybrid-ai-platform/packages/domain/external-integrations/src
 ```
 
 Initial commit:
 
 ```bash
-git add packages/domain
+git add hybrid-ai-platform/packages/domain
 git commit -m "[SCAFFOLD] Create domain packages for all subdomains"
 ```
 
